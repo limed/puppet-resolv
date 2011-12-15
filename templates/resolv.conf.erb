@@ -1,0 +1,7 @@
+# File managed by Puppet
+
+search <% search_domain.each do |search| %> <%= search -%>
+<% end %>
+<% dns_servers.each do |ns| %>nameserver <%= ns %>
+<% end %>
+options timeout:1

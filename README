@@ -1,0 +1,9 @@
+
+- resolv.conf puppet module that uses parameterized classes
+
+usage:
+
+    class { "resolv":
+        search_domain   => ["oregonstate.edu", "orst.edu"],
+        dns_servers     => ["128.193.4.20", "128.193.0.10"],
+    }
